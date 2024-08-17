@@ -8,7 +8,7 @@
     color: white;
     border: 3px dashed white; /* Thicker, dashed border around the grid */
     box-sizing: border-box;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Add a subtle glow effect */
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px rgb(110, 110, 131), 0 0 30px rgb(110, 110, 131), 0 0 40px rgb(110, 110, 131), 0 0 50px rgb(110, 110, 131), 0 0 60px rgb(110, 110, 131), 0 0 70px #00f; /* Add a subtle glow effect */
 }
 
 .board > div {
@@ -20,6 +20,8 @@
     box-sizing: border-box;
     font-family: 'Press Start 2P', cursive; /* Pixelated font */
     font-size: 12px; /* Adjust size as needed */
+    color: white;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f, 0 0 50px #00f, 0 0 60px #00f, 0 0 70px #00f; /* Glowing effect */
 }
 
 /* Remove right border from cells in the last column */
@@ -31,6 +33,7 @@
 .board > div:nth-last-child(-n+3) {
     border-bottom: none;
 }
+
 body {
     background-color: black;
 }
