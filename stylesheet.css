@@ -17,6 +17,7 @@
     border-right: 1px dotted white;
     border-bottom: 1px dotted white;
     box-sizing: border-box; /* Ensure the borders don't affect the layout */
+    font-family: 'Press Start 2P', cursive; /* Apply pixelated font */
 }
 
 /* Remove right border from cells in the last column */
