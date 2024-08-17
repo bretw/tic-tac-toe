@@ -1,23 +1,33 @@
 .board {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     background-color: rgb(0, 0, 0);
     width: 100px;
     height: 100px;
     color: white;
+    border: 1px dotted white; /* Single border around the grid */
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
 }
 
 .board > div {
-display: flex;
-justify-content: center;
-align-items: center;
-border: 1px dotted white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px dotted white;
+    border-bottom: 1px dotted white;
+    box-sizing: border-box; /* Ensure the borders don't affect the layout */
 }
 
-.header {
-    height: fit-content;
-    width: 100px;
-    display: flex;
-    justify-content: space-between;
+/* Remove right border from cells in the last column */
+.board > div:nth-child(3n) {
+    border-right: none;
+}
+
+/* Remove bottom border from cells in the last row */
+.board > div:nth-last-child(-n+3) {
+    border-bottom: none;
+}
+body {
+    background-color: black;
 }
