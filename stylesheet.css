@@ -5,10 +5,10 @@
     background-color: rgb(0, 0, 0);
     width: 100px;
     height: 100px;
-    color: white;
+
     border: 3px dashed white; /* Thicker, dashed border around the grid */
     box-sizing: border-box;
-    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px rgb(110, 110, 131), 0 0 30px rgb(110, 110, 131), 0 0 40px rgb(110, 110, 131), 0 0 50px rgb(110, 110, 131), 0 0 60px rgb(110, 110, 131), 0 0 70px #00f; /* Add a subtle glow effect */
+    box-shadow:  0 0 1px #fff, 0 0 1px #fff, 0 0 2px #00f, 0 0 3px #00f, 0 0 4px #00f, 0 0 5px #00f, 0 0 6px #00f, 0 0 7px #00f; /* Glowing effect */
 }
 
 .board > div {
@@ -18,10 +18,11 @@
     border-right: 3px dashed white;
     border-bottom: 3px dashed white;
     box-sizing: border-box;
+    
     font-family: 'Press Start 2P', cursive; /* Pixelated font */
     font-size: 12px; /* Adjust size as needed */
-    color: white;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f, 0 0 50px #00f, 0 0 60px #00f, 0 0 70px #00f; /* Glowing effect */
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 2px #00f, 0 0 3px #00f, 0 0 4px #00f, 0 0 5px #00f, 0 0 6px #00f, 0 0 7px #00f; /* Glowing effect */
 }
 
 /* Remove right border from cells in the last column */
@@ -36,4 +37,8 @@
 
 body {
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }

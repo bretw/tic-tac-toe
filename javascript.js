@@ -24,7 +24,7 @@ function handleBoardClick(event) {
     if (Gameboard[index] === '') {
         Gameboard[index] = PlayerTurn;
         renderBoard();
-        if (CheckforWin() || CheckForTie()) setTimeout(FinishGame, 5);
+        if (CheckforWin() || CheckForTie()) setTimeout(FinishGame, 3);
         else PlayerTurn = PlayerTurn === 'X' ? 'O' : 'X';
     }
 }
