@@ -1,5 +1,5 @@
 function Player() {
-    function Create(name,marker) {
+    function Create(name, marker) {
         return {
             name: name,
             marker: marker,
@@ -8,10 +8,17 @@ function Player() {
                 this.name = newName;
             },
             wins: function() {
+                console.log(this); // Debugging: Log the current player object
                 this.score++;
-            }
-            };
-        }
+                document.getElementById(`${this.marker}score`).style.textShadow= '0 0 1px #fff, 0 0 1px #fff, 0 0 2px rgb(3, 202, 93), 0 0 3px rgb(3, 202, 93), 0 0 4px rgb(3, 202, 93), 0 0 5px rgb(3, 202, 93), 0 0 6px rgb(3, 202, 93), 0 0 7px rgb(3, 202, 93)';
+                
+                setTimeout(() => {
+                    document.getElementById(`${this.marker}score`).style.textShadow= '0 0 1px #fff, 0 0 1px #fff, 0 0 2px #00f, 0 0 3px #00f, 0 0 4px #00f, 0 0 5px #00f, 0 0 6px #00f, 0 0 7px #00f';
+                }, 1000); // Change color back to white after 1 second
+            },
+        };
+    }
+    
     return {
         Create: Create,
     };
@@ -36,6 +43,7 @@ function FinishGame() {
         PlayerTurn.wins(); // Increment the score for the winning player
         document.getElementById('Xscore').innerHTML= X.score;
         document.getElementById('Oscore').innerHTML= O.score;
+        console.log("x");
     }
 
     setTimeout(() => {
@@ -64,7 +72,9 @@ function renderBoard() {
 function Reset() {   //reset scores
     X.score = 0;
     O.score = 0;
+
     UpdateScreen();
+
     Gameboard = ['', '', '', '', '', '', '', '', ''];
     renderBoard();
 
