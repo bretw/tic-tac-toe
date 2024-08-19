@@ -93,4 +93,5 @@ body {  font-family: 'Press Start 2P', cursive; /* Pixelated font */
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
+    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 2px rgb(3, 202, 93), 0 0 3px rgb(3, 202, 93), 0 0 4px rgb(3, 202, 93), 0 0 5px rgb(3, 202, 93), 0 0 6px rgb(3, 202, 93), 0 0 7px rgb(3, 202, 93); /* Glowing effect */
 }
