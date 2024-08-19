@@ -81,10 +81,10 @@ body {  font-family: 'Press Start 2P', cursive; /* Pixelated font */
 }
 
 .reset {
-    margin-top: 15px;
     color: rgb(110, 110, 110);
     font-size: 6px;
     text-align: center;
+    padding: 10px;;
 }
 
 .scores {
