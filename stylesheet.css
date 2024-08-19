@@ -1,3 +1,47 @@
+body {  font-family: 'Press Start 2P', cursive; /* Pixelated font */
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+.player {
+    display: grid;
+    color: white;
+    text-wrap: nowrap;
+    grid-template-columns: 1fr 1fr;
+    font-size: 5px;
+    gap: 4px;
+}
+
+    .player #player2 {
+        text-align: end;
+    }
+
+    .input {
+        border: 3px dashed white;
+        height: 15px;
+        font-family: 'Press Start 2P', cursive;
+        background-color: black;
+        color: white;
+        width: 38px;
+        font-size: 100%;
+    }
+
+    .input:focus {
+        border: 3px dashed #00f;
+        font-family: 'Press Start 2P', cursive;
+        outline: none;
+    }
+
+    .input:valid {
+        border: none;
+    }
 .board {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -35,10 +79,3 @@
     border-bottom: none;
 }
 
-body {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
