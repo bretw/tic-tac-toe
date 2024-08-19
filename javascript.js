@@ -32,7 +32,6 @@ function CheckForTie() {
 }
 
 function FinishGame() {
-    alert(CheckForTie() ? "It's a tie!" : `Player ${PlayerTurn.name} wins!`);
     if (!CheckForTie()) {
         PlayerTurn.wins(); // Increment the score for the winning player
         document.getElementById('Xscore').innerHTML= X.score;
