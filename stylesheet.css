@@ -19,7 +19,7 @@ body {  font-family: 'Press Start 2P', cursive; /* Pixelated font */
     gap: 4px;
 }
 
-    .player #player2 {
+    .player .input#player2:valid {
         text-align: end;
     }
 
@@ -41,6 +41,7 @@ body {  font-family: 'Press Start 2P', cursive; /* Pixelated font */
 
     .input:valid {
         border: none;
+        font-size: 6px;
     }
 .board {
     display: grid;
@@ -79,3 +80,17 @@ body {  font-family: 'Press Start 2P', cursive; /* Pixelated font */
     border-bottom: none;
 }
 
+.reset {
+    margin-top: 15px;
+    color: rgb(110, 110, 110);
+    font-size: 6px;
+    text-align: center;
+}
+
+.scores {
+    margin-top: 5px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
