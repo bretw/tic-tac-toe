@@ -64,11 +64,7 @@ function renderBoard() {
 function Reset() {   //reset scores
     X.score = 0;
     O.score = 0;
-    X.updateName('Player1');    //update names to default
-    O.updateName('Player2');
     UpdateScreen();
-    document.getElementById('player1').value = '';
-    document.getElementById('player2').value = '';
     Gameboard = ['', '', '', '', '', '', '', '', ''];
     renderBoard();
 
